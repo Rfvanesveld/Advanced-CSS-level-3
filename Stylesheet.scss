@@ -1,0 +1,13 @@
+@import './Variables';
+
+.container {
+    background-color: $background-color6;
+    width: 101%;
+    height: 95vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;}
+
+@import './Social-Media';
+
+
