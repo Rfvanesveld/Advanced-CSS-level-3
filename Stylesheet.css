@@ -1,11 +1,12 @@
 @charset "UTF-8";
 .container {
   background-color: #c3cfe2;
-  width: 101%;
-  height: 95vh;
+  width: 100%;
+  height: 97vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  overflow: hidden;
 }
 
 .social-media {
@@ -18,26 +19,46 @@
   border: solid black 1px;
   padding: 10px 30px;
   background-color: #e17b77;
+  -webkit-animation-name: right;
+          animation-name: right;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 .social-media__twitter {
   border: solid black 1px;
   padding: 10px 30px;
   background-color: #00aced;
+  -webkit-animation-name: right;
+          animation-name: right;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 .social-media__linkedin {
   border: solid black 1px;
   padding: 10px 30px;
   background-color: #007bb6;
+  -webkit-animation-name: right;
+          animation-name: right;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 .social-media__facebook {
   border: solid black 1px;
   padding: 10px 30px;
   background-color: #3b5998;
+  -webkit-animation-name: right;
+          animation-name: right;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 .social-media__github {
   border: solid black 1px;
   padding: 10px 30px;
   background-color: #333;
+  -webkit-animation-name: right;
+          animation-name: right;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 .social-media__blog::before {
   font-family: "Font Awesome 5 Free";
@@ -65,61 +86,77 @@
   padding-left: 30px;
 }
 .social-media__blog:hover {
-  -webkit-animation-name: move;
-          animation-name: move;
+  -webkit-animation-name: left;
+          animation-name: left;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
 .social-media__twitter:hover {
-  -webkit-animation-name: move;
-          animation-name: move;
+  -webkit-animation-name: left;
+          animation-name: left;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
 .social-media__linkedin:hover {
-  -webkit-animation-name: move;
-          animation-name: move;
+  -webkit-animation-name: left;
+          animation-name: left;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
 .social-media__facebook:hover {
-  -webkit-animation-name: move;
-          animation-name: move;
+  -webkit-animation-name: left;
+          animation-name: left;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
 .social-media__github:hover {
-  -webkit-animation-name: move;
-          animation-name: move;
+  -webkit-animation-name: left;
+          animation-name: left;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
 
-@-webkit-keyframes move {
+@-webkit-keyframes left {
   from {
     transform: translateX(0px);
   }
   to {
-    transform: translateX(-355px);
+    transform: translateX(-350px);
   }
 }
 
-@keyframes move {
+@keyframes left {
   from {
     transform: translateX(0px);
   }
   to {
-    transform: translateX(-355px);
+    transform: translateX(-350px);
+  }
+}
+@-webkit-keyframes right {
+  from {
+    transform: translateX(-350px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes right {
+  from {
+    transform: translateX(-350px);
+  }
+  to {
+    transform: translateX(0px);
   }
 }
 span {
